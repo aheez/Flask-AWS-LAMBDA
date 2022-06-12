@@ -19,6 +19,8 @@ test_locations = [location(longitude=temp_long[i], latitude=temp_lati[i], priori
 
 for i in range(len(test_locations)):
 	test_locations[i].set_weight(distance(mainWH, test_locations[i]))
-
-for i in range(len(test_locations)):
 	print(test_locations[i].weight)
+
+# TODO: Sort them
+
+# TODO: GOOGLE MAPS INTEGRATION

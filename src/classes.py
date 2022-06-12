@@ -1,4 +1,4 @@
-from cmath import sqrt
+from math import sqrt
 
 class location():
     def __init__(self, longitude: float, latitude: float, priority, idx: int):
