@@ -4,3 +4,4 @@ lib
 pyvenv.cfg
 src/__pycache__
 Scripts
+src\__pycache__
