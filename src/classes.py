@@ -69,7 +69,11 @@ def gen_route(start:location, locations: list) -> list:
     return route
 
 def update_cost(start:location, end: list) -> list:
-    map(lambda x: x.set_distance(get_distance(start, end)), end)
+    # TODO: Fix this issue <list issue for updating the distance> 
+    if DEBUG:
+        map(lambda x: x.set_distance(get_distance(start, [x])), end)
+    else:
+        get_distance(start, end)
     return sorted(end, key=lambda x: x.cost)
 
 def sort_locations(locations: list):
